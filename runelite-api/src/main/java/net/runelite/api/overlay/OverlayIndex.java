@@ -47,7 +47,7 @@ public class OverlayIndex
 				overlays.add(id);
 			}
 		}
-		catch (IOException ex)
+		catch (NullPointerException|ExceptionInInitializerError|IOException ex)
 		{
 			log.warn("unable to load overlay index", ex);
 		}
